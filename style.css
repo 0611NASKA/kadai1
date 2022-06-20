@@ -6,6 +6,7 @@
   
 header {
   font-family:"Hiragino Maru Gothic ProN W4";
+  width: 100%;
   height: 50px;
   padding: 10px 0;
   text-align: center;
@@ -25,7 +26,6 @@ main {
   padding: 10px;
   position: relative;
   background-color: #eee;
-  margin: auto;
 }
   
 .main-box:last-child {
@@ -67,27 +67,29 @@ main {
   
 footer {
   height: 50px;
+  width: 100%;
   background-color: #aaa;
 }
 
 @media screen and (max-width: 768px) {
   header{
-    width: 130%;
+    width: 100%;
   }
 
   footer{
-    width: 130%;
+    width: 100%;
   }
 
   main{
-    display: block;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
   }
 
   .main-box{
     width: 90%;
+    margin-right: 0;
     margin-bottom: 20px;
-  }
-  .main-box:last-child {
-    margin: auto;
   }
 }
